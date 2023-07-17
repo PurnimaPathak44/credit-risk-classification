@@ -2,13 +2,13 @@
 
 An overview of the analysis:
 
-The Purpose of this analysis was to use various techniques to train and evaluate a model based on loan risk. The dataset used is of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers based on loan size, interest rate, borrowerís income, debt to income ratio, number of accounts, derogatory remarks, total debt and loan status. The goal is to predict the healthy loans and the high-risk loans.
+The Purpose of this analysis was to use various techniques to train and evaluate a model based on loan risk. The dataset used is of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers based on loan size, interest rate, borrower‚Äôs income, debt to income ratio, number of accounts, derogatory remarks, total debt and loan status. The goal is to predict the healthy loans and the high-risk loans.
 
-To gain the goal, firstly I created the labels for which I set ìyî from the ìloan_statusî column and then created the features with the remaining columns from the lending dataset. A value of 0 in the ìloan_statusî column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
+To gain the goal, firstly I created the labels for which I set ‚Äúy‚Äù from the ‚Äúloan_status‚Äù column and then created the features with the remaining columns from the lending dataset. A value of 0 in the ‚Äúloan_status‚Äù column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
 Then I split the data into Training datasets and Testing datasets by using the train_test_split.
 
-Then I Created a Logistic Regression Model with the Original Data and Fitted a logistic regression model by using the training data (X_train†and†y_train).
-The next step was to Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model. After that I evaluated the modelís performance by doing the following:
+Then I Created a Logistic Regression Model with the Original Data and Fitted a logistic regression model by using the training data (X_train¬†and¬†y_train).
+The next step was to Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model. After that I evaluated the model‚Äôs performance by doing the following:
 o Calculating the balanced accuracy score.
 o Generating a confusion matrix.
 o Printing the classification report.
@@ -21,26 +21,30 @@ Model 1:
 Balanced Accuracy Score: 0.94
 
 
-Precision:	1.00 for healthy loans.
+Precision:	1.00 for healthy loans,
+
        	0.87 for high-risk loans
        
        
-Recall: 	1.00 for healthy loans. 
+Recall: 	1.00 for healthy loans, 
+
        	0.89 for high-risk loans
 
 Re- sampled Model 2:
 
 Balanced Accuracy Score: 1.00
 
-Precision: 1.00 for healthy loans.
+Precision: 1.00 for healthy loans,
+
        	0.87 for high-risk loans.
        
        
-Recall:	1.00 for healthy loans.
+Recall:	1.00 for healthy loans,
+
        	1.00 for high-risk loans.
 
 
 
-Summary:† 
+Summary:¬† 
 
 The second model did a good job at predicting the high-risk loans when we compare the f1 score for both the models.
