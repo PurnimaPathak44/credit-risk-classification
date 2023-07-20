@@ -47,4 +47,4 @@ Recall:	1.00 for healthy loans,
 
 Summary:  
 
-The second model did a good job at predicting the high-risk loans when we compare the f1 score for both the models.
+In short, the second model did a good job at predicting the high-risk loans when we compare the f1 score for both the models. The accuracy score is 1 on the second one whereas it is .94 in the initial logistic regression model. I would prefer the second model because the first model had an imbalanced data meaning the healthy loans were more in numbers in comparision to high-risk loans  whereas the second model was resampled using RandomOverSampler which took the imbalance into consideration making the prediction more accurate.
